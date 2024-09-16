@@ -37,7 +37,7 @@ class Player(pygame.sprite.Sprite):
             Laser(laser_surface, self.rect.midtop, (all_sprites, laser_sprites))  
             self.can_shoot = False
             self.laser_shoot_time = pygame.time.get_ticks()
-            # laser_sound.play() - add after PulseAudio installed
+            laser_sound.play()
             
         self.laser_timer()
             
@@ -113,6 +113,7 @@ def collisions():
         if collided_sprites:
             laser.kill()
             AnimatedExplosion(explosion_frames, laser.rect.midtop, all_sprites)
+            explosion_sound.play()
 
 def display_score():
     current_time = pygame.time.get_ticks() // 100
@@ -123,7 +124,7 @@ def display_score():
         
 # general setup
 pygame.init()
-pygame.mixer.init()   
+ 
 display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Spaceship shooter")
 clock = pygame.time.Clock()
@@ -136,8 +137,11 @@ laser_surface = pygame.image.load(join('images', 'laser.png')).convert_alpha()
 font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 40)
 explosion_frames = [pygame.image.load(join('images', 'explosion', f'{i}.png')).convert_alpha() for i in range(21)]
 
-# laser_sound = pygame.mixer.Sound(join('audio', 'laser.wav')) - add after PulseAudio installed
-
+laser_sound = pygame.mixer.Sound(join('audio', 'laser.wav'))
+explosion_sound = pygame.mixer.Sound(join('audio', 'explosion.wav'))
+game_music = pygame.mixer.Sound(join('audio', 'game_music.wav'))
+game_music.set_volume(0.5)
+game_music.play(loops= -1)
 
 # sprites
 all_sprites = pygame.sprite.Group()
