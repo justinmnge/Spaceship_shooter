@@ -98,6 +98,8 @@ running = True
 star_surface = pygame.image.load(join('images', 'star.png')).convert_alpha()
 meteor_surface = pygame.image.load(join('images', 'meteor.png')).convert_alpha()
 laser_surface = pygame.image.load(join('images', 'laser.png')).convert_alpha()
+font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 20)
+text_surf = font.render('text', True, '#edf2ee')
 
 # sprites
 all_sprites = pygame.sprite.Group()
@@ -126,8 +128,10 @@ while running:
     collisions()
     
     # draw the game
-    display_surface.fill('black')                   
+    display_surface.fill('#000000')                   
     all_sprites.draw(display_surface)
+    
+    display_surface.blit(text_surf, (0,0))
                   
     pygame.display.flip()
 
