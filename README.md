@@ -1,6 +1,6 @@
 # README
 
-Welcome to **Spaceship Shooter**! This classic arcade game has been recreated using Pygame, where you'll pilot a spaceship in a hostile asteroid field. Your goal is to survive as long as possible by shooting down as many asteroids you can while avoiding collisions.
+Welcome to **Spaceship Shooter!** This action-packed game, built with Pygame, puts you in control of a spaceship navigating through an asteroid-filled danger zone. You can freely move up, down, left, and right. Your mission is to dodge or destroy incoming asteroids using your laser while enjoying immersive sound effects and dynamic background music. How long can you survive?
 
 ![spaceship_shooter](https://github.com/user-attachments/assets/817719c3-e0b7-4276-b39e-225955108d97)
 
@@ -20,6 +20,8 @@ Welcome to **Spaceship Shooter**! This classic arcade game has been recreated us
 Good luck, and enjoy your time in space!
 
 ### Future implementation:
+   - Add spaceship rotation
+   - Add spaces ship thruster
    - Update background image
    - Add a scoring system that tracks previous high scores
    - Implement multiple lives and respawning
