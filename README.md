@@ -34,3 +34,24 @@ Good luck, and enjoy your time in space!
    - Add a shield power-up
    - Add a speed power-up
    - Add bombs that can be dropped
+
+## Lessons Observed in the Project:
+   - ### Technical Skills:
+      - Implemented a game loop using Pygame
+      - Handled user input for player controls
+      - Managed game state and transitions
+      - Created and manipulated game objects
+      - Implemented collision detection and object interactions
+      - Integrated audio systems for sound effects and background music
+      - Integrated a simple scoring mechanic
+
+   - ### Game Development Concepts:
+      - Understanding of basic game architecture
+      - Real-time rendering and frame updates
+      - Game physics and movement mechanics
+      - Object-oriented programming in a game concept
+
+   - ### Tools & Frameworks:
+      - Practical experience with the Pygame library
+      - Python programming in a real-world application
+      - Practiced assed integrations (graphics and audio)
