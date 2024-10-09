@@ -54,4 +54,4 @@ Good luck, and enjoy your time in space!
    - ### Tools & Frameworks:
       - Practical experience with the Pygame library
       - Python programming in a real-world application
-      - Practiced assed integrations (graphics and audio)
+      - Practiced asset integrations (graphics and audio)
